@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Muhammed.Hossny\\source\\repos\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{50BB325B-7FFB-431C-9203-D75788D250C5}|CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj|c:\\users\\hp\\source\\repos\\car-dealership-management-system\\car dealership management system demo 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50BB325B-7FFB-431C-9203-D75788D250C5}|CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj|solutionrelative:car dealership management system demo 1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\Program.cs",
+              "RelativeDocumentMoniker": "CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\Program.cs",
+              "RelativeToolTip": "CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-03T17:12:10.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",

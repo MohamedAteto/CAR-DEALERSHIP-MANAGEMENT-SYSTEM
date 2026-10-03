@@ -50,7 +50,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                         new
                         {
                             CategoryId = 1,
-                            CategoryDescription = "Comfortable Passenger Cars",
+                            CategoryDescription = "Comfortable Passenger Vehicles",
                             CategoryName = "Sedan"
                         },
                         new
@@ -62,7 +62,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                         new
                         {
                             CategoryId = 3,
-                            CategoryDescription = "Compact Practical Cars",
+                            CategoryDescription = "Compact Practical Vehicles",
                             CategoryName = "HatchBack"
                         });
                 });
@@ -230,7 +230,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                     b.HasIndex("EmployeeEmail")
                         .IsUnique();
 
-                    b.ToTable("Employee");
+                    b.ToTable("Employees");
 
                     b.HasData(
                         new
@@ -303,7 +303,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
 
                     b.HasIndex("VehicleId");
 
-                    b.ToTable("Sale");
+                    b.ToTable("Sales");
 
                     b.HasData(
                         new
@@ -401,7 +401,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                     b.HasIndex("VIN")
                         .IsUnique();
 
-                    b.ToTable("Cars");
+                    b.ToTable("Vehicles");
 
                     b.HasData(
                         new

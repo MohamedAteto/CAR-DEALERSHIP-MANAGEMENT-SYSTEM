@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.VehicleDTOs
 {
-    public class VehicleDTOs
+    public class VehicleDTO
     {
         public int VehicleId { get; set; }
         

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Muhammed.Hossny\\source\\repos\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj": {}
+    "C:\\Users\\HP\\Source\\Repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Muhammed.Hossny\\source\\repos\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj": {
+    "C:\\Users\\HP\\Source\\Repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Muhammed.Hossny\\source\\repos\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj",
         "projectName": "CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1",
-        "projectPath": "C:\\Users\\Muhammed.Hossny\\source\\repos\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj",
-        "packagesPath": "C:\\Users\\Muhammed.Hossny\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Muhammed.Hossny\\source\\repos\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\obj\\",
+        "projectPath": "C:\\Users\\HP\\Source\\Repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\Source\\Repos\\CAR-DEALERSHIP-MANAGEMENT-SYSTEM\\CAR DEALERSHIP MANAGEMENT SYSTEM Demo 1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Muhammed.Hossny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

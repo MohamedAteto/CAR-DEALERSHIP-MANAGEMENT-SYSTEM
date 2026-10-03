@@ -8,12 +8,13 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
-        public DbSet<Vehicle> Cars { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Sale> Sales { get; set; }
         public DbSet<CustomerProfile> CustomersProfiles { get; set; }
         public DbSet<Category> Categorys { get; set; }
-        public DbSet<Sale> sales { get; set; }
+        
+        public DbSet<Employee> Employees { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -91,9 +92,9 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Data
 
             modelBuilder.Entity<Category>()
                 .HasData(
-                    new Category { CategoryId = 1, CategoryName = "Sedan" ,CategoryDescription = "Comfortable Passenger Cars"  },
+                    new Category { CategoryId = 1, CategoryName = "Sedan" ,CategoryDescription = "Comfortable Passenger Vehicles"  },
                     new Category { CategoryId = 2, CategoryName = "SUV" , CategoryDescription ="Sprt utility Vehicles"},
-                    new Category { CategoryId = 3, CategoryName = "HatchBack" ,CategoryDescription ="Compact Practical Cars" }
+                    new Category { CategoryId = 3, CategoryName = "HatchBack" ,CategoryDescription ="Compact Practical Vehicles" }
                 
                 );
 

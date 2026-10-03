@@ -61,7 +61,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Cars",
+                name: "Vehicles",
                 columns: table => new
                 {
                     VehicleId = table.Column<int>(type: "int", nullable: false)
@@ -132,7 +132,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                     table.ForeignKey(
                         name: "FK_Sale_Cars_VehicleId",
                         column: x => x.VehicleId,
-                        principalTable: "Cars",
+                        principalTable: "Vehicles",
                         principalColumn: "VehicleId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -154,9 +154,9 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 columns: new[] { "CategoryId", "CategoryDescription", "CategoryName" },
                 values: new object[,]
                 {
-                    { 1, "Comfortable Passenger Cars", "Sedan" },
+                    { 1, "Comfortable Passenger Vehicles", "Sedan" },
                     { 2, "Sprt utility Vehicles", "SUV" },
-                    { 3, "Compact Practical Cars", "HatchBack" }
+                    { 3, "Compact Practical Vehicles", "HatchBack" }
                 });
 
             migrationBuilder.InsertData(
@@ -180,7 +180,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Cars",
+                table: "Vehicles",
                 columns: new[] { "VehicleId", "CategoryId", "Color", "FuelType", "Make", "Mileage", "Model", "Status", "Transmission", "VIN", "VehiclePrice", "Year" },
                 values: new object[,]
                 {
@@ -211,12 +211,12 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_Cars_CategoryId",
-                table: "Cars",
+                table: "Vehicles",
                 column: "CategoryId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Cars_VIN",
-                table: "Cars",
+                table: "Vehicles",
                 column: "VIN",
                 unique: true);
 
@@ -276,7 +276,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 name: "Sale");
 
             migrationBuilder.DropTable(
-                name: "Cars");
+                name: "Vehicles");
 
             migrationBuilder.DropTable(
                 name: "Customers");

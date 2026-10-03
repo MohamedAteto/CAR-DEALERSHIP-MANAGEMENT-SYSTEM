@@ -2,19 +2,8 @@
 {
     public class UpdateSaleDTO
     {
-        public int SaleId { get; set; }
-        public DateTime SaleDate { get; set; }
-        public decimal SalePrice { get; set; }
-        public string? Notes { get; set; }
-
+        public string Nots { get; set; }
         public string PaymentMethod { get; set; }
 
-        public int CustomerId { get; set; }
-
-
-        public int EmployeeId { get; set; }
-
-
-        public int VehicleId { get; set; }
-    }
+    }   
 }

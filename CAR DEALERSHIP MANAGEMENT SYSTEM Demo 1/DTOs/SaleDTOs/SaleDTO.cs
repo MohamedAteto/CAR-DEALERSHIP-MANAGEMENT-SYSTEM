@@ -13,10 +13,12 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.SaleDTOs
 
         public int CustomerId { get; set; }
 
-
+        public string PaymentMethod { get; set; }
+        public decimal TotalAmount { get; set; }
         public int EmployeeId { get; set; }
-
-
         public int VehicleId { get; set; }
+        public string VehicleVIN { get; set; }
+
+
     }
 }

@@ -8,6 +8,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.CustmorProfileDTOs
         public string CustomerAddress { get; set; }
         public string? CustomerCity { get; set; }
         public string? CustomerNationality { get; set; }
-        public int CustomerId { get; set; }
+        public DateTime CustomerBirthOfDate { get; set; }
+        
     }
 }
