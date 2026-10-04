@@ -10,6 +10,6 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.CustomerDTOs
         public string PhoneNumber { get; set; }
         public string DriverLicenseNumber { get; set; }
 
-        public CreateCustmorProfile CustmorProfile { get; set; }
+        public CreateCustmorProfileDTO CustmorProfile { get; set; }
     }
 }

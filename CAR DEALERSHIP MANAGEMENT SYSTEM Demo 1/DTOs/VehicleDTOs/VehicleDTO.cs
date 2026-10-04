@@ -25,6 +25,6 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.VehicleDTOs
 
         public int CategoryId { get; set; }
 
-        public Category category { get; set; }
+        public CategoryDTO category { get; set; }
     }
 }

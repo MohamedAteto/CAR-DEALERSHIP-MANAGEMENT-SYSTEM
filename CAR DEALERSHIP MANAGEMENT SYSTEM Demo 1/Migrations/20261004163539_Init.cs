@@ -44,7 +44,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Employee",
+                name: "Employees",
                 columns: table => new
                 {
                     EmployeeId = table.Column<int>(type: "int", nullable: false)
@@ -57,7 +57,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Employee", x => x.EmployeeId);
+                    table.PrimaryKey("PK_Employees", x => x.EmployeeId);
                 });
 
             migrationBuilder.CreateTable(
@@ -75,7 +75,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                     VIN = table.Column<string>(type: "nvarchar(17)", maxLength: 17, nullable: false),
                     FuelType = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: true),
                     Transmission = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Status = table.Column<string>(type: "nvarchar(max)", nullable: false, defaultValue: "Available"),
                     CategoryId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -113,7 +113,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Sale",
+                name: "Sales",
                 columns: table => new
                 {
                     SaleId = table.Column<int>(type: "int", nullable: false)
@@ -128,23 +128,23 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Sale", x => x.SaleId);
+                    table.PrimaryKey("PK_Sales", x => x.SaleId);
                     table.ForeignKey(
-                        name: "FK_Sale_Cars_VehicleId",
+                        name: "FK_Sales_Cars_VehicleId",
                         column: x => x.VehicleId,
                         principalTable: "Cars",
                         principalColumn: "VehicleId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Sale_Customers_CustomerId",
+                        name: "FK_Sales_Customers_CustomerId",
                         column: x => x.CustomerId,
                         principalTable: "Customers",
                         principalColumn: "CustomerId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Sale_Employee_EmployeeId",
+                        name: "FK_Sales_Employees_EmployeeId",
                         column: x => x.EmployeeId,
-                        principalTable: "Employee",
+                        principalTable: "Employees",
                         principalColumn: "EmployeeId",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -170,7 +170,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Employee",
+                table: "Employees",
                 columns: new[] { "EmployeeId", "EmployeeEmail", "EmployeeFullName", "EmployeeHireDate", "EmployeePhoneNumber", "EmployeePosition" },
                 values: new object[,]
                 {
@@ -200,7 +200,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Sale",
+                table: "Sales",
                 columns: new[] { "SaleId", "CustomerId", "EmployeeId", "Notes", "PaymentMethod", "SaleDate", "SalePrice", "VehicleId" },
                 values: new object[,]
                 {
@@ -245,24 +245,24 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Employee_EmployeeEmail",
-                table: "Employee",
+                name: "IX_Employees_EmployeeEmail",
+                table: "Employees",
                 column: "EmployeeEmail",
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sale_CustomerId",
-                table: "Sale",
+                name: "IX_Sales_CustomerId",
+                table: "Sales",
                 column: "CustomerId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sale_EmployeeId",
-                table: "Sale",
+                name: "IX_Sales_EmployeeId",
+                table: "Sales",
                 column: "EmployeeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sale_VehicleId",
-                table: "Sale",
+                name: "IX_Sales_VehicleId",
+                table: "Sales",
                 column: "VehicleId");
         }
 
@@ -273,7 +273,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 name: "CustomersProfiles");
 
             migrationBuilder.DropTable(
-                name: "Sale");
+                name: "Sales");
 
             migrationBuilder.DropTable(
                 name: "Cars");
@@ -282,7 +282,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
                 name: "Customers");
 
             migrationBuilder.DropTable(
-                name: "Employee");
+                name: "Employees");
 
             migrationBuilder.DropTable(
                 name: "Categorys");

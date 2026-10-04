@@ -15,7 +15,15 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddScoped<IUnitOfWork,UnitOfWork>();
+builder.Services.AddScoped<IVehicleRepo,VehicleRepo>();
+builder.Services.AddScoped<ICategoryRepo,CategoryRepo>();
+builder.Services.AddScoped<ICustomerRepo,CustomerRepo>();
+builder.Services.AddScoped<IEmployeeRepo,EmployeeRepo>();
+builder.Services.AddScoped<ISaleRepo, SaleRepo>();
+builder.Services.AddScoped<ICustomerProfileRepo,CustomerProfileRepo>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

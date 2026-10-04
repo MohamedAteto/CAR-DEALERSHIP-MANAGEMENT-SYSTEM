@@ -5,8 +5,8 @@
         IVehicleRepo VehicleRepo { get; }
 
         ICategoryRepo CategoryRepo { get; }
-        //ISaleRepo SaleRepo { get; }
-
+        ISaleRepo SaleRepo { get; }
+        IEmployeeRepo EmployeeRepo { get; }
         ICustomerProfileRepo customerProfileRepo { get; }
         ICustomerRepo CustomerRepo { get; }
         void Save();

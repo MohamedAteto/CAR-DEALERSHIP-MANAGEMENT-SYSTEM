@@ -135,7 +135,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Data
                     new Employee { EmployeeId = 2 , EmployeeFullName = "Aya Emad", EmployeePosition ="Sales Consultant" , EmployeeEmail = "aya.emad@autodrive.com", EmployeePhoneNumber = "01010000002" , EmployeeHireDate = "2021-04-15"},
                     new Employee { EmployeeId = 3 , EmployeeFullName = "Hassan Ali", EmployeePosition = "Sales Consultant", EmployeeEmail = "hassan.ali@autodrive.com", EmployeePhoneNumber = "01010000003" , EmployeeHireDate = "2021-02-20"}
                 );
-
+                
 
             modelBuilder.Entity<Sale>()
                 .HasData(

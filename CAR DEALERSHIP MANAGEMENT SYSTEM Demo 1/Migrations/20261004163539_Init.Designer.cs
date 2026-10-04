@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20261004081333_Add Employee")]
-    partial class AddEmployee
+    [Migration("20261004163539_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -378,7 +378,9 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Migrations
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("nvarchar(max)")
+                        .HasDefaultValue("Available");
 
                     b.Property<string>("Transmission")
                         .IsRequired()

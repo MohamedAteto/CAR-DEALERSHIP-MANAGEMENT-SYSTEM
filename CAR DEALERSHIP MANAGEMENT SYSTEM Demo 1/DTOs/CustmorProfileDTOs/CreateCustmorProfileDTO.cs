@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.CustmorProfileDTOs
 {
-    public class CreateCustmorProfile
+    public class CreateCustmorProfileDTO
     {
         public string CustomerAddress { get; set; }
         public string? CustomerCity { get; set; }

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Models
@@ -42,6 +43,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Models
 
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
+        [JsonIgnore]
         public Category? Category { get; set; }
 
 
