@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.CustmorProfileDTOs;
 
 namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.CustomerDTOs
 {
@@ -8,5 +9,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.CustomerDTOs
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string DriverLicenseNumber { get; set; }
+
+        public CreateCustmorProfile CustmorProfile { get; set; }
     }
 }

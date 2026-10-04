@@ -1,9 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.CategoryDTOs;
+using CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Models;
 
 namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.VehicleDTOs
 {
-    public class VehicleDTOs
+    public class VehicleDTO
     {
         public int VehicleId { get; set; }
         
@@ -22,5 +24,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.DTOs.VehicleDTOs
         public string Status { get; set; }
 
         public int CategoryId { get; set; }
+
+        public Category category { get; set; }
     }
 }

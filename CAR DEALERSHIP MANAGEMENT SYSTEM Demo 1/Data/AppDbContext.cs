@@ -13,7 +13,7 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Data
         public DbSet<Sale> Sales { get; set; }
         public DbSet<CustomerProfile> CustomersProfiles { get; set; }
         public DbSet<Category> Categorys { get; set; }
-        public DbSet<Sale> sales { get; set; }
+        public DbSet<Employee> Employees { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -78,6 +78,10 @@ namespace CAR_DEALERSHIP_MANAGEMENT_SYSTEM_Demo_1.Data
                 .WithOne(v => v.Vehicle)
                 .HasForeignKey(v => v.VehicleId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Vehicle>()
+                .Property(v => v.Status)
+                .HasDefaultValue("Available");
 
 
 
